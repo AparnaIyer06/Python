@@ -62,7 +62,7 @@ class Gridworld:
         """
         Return the neighbours of cell
         """
-        neughbour_cord = [
+        neighbour_cord = [
             (-1, -1),
             (-1, 0),
             (-1, 1),
@@ -75,7 +75,7 @@ class Gridworld:
         current_x = cell.position[0]
         current_y = cell.position[1]
         neighbours = []
-        for n in neughbour_cord:
+        for n in neighbour_cord:
             x = current_x + n[0]
             y = current_y + n[1]
             if 0 <= x < self.world_x_limit and 0 <= y < self.world_y_limit:
